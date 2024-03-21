@@ -1,0 +1,21 @@
+.navbar {
+    border-bottom: solid 1px black;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+    justify-content: space-around;
+    padding: 8px 0px;
+}
+
+.title {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.profileIcon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
