@@ -1,0 +1,10 @@
+.food {
+	display: flex;
+    justify-content: center;
+
+	.foodContainer {
+		width: 800px;
+		height: 800px;
+		border: solid 1px black;
+	}
+}

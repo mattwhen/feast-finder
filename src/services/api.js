@@ -6,8 +6,11 @@ const fetchData = async (query) => {
 			`https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=db797c14a8f74d1486063c3da2bc19ed`
 		);
 		const data = await response.json();
+        console.log('api call', data.results);
 		return data.results;
-	} catch (error) {}
+	} catch (error) {
+        console.error('Error fetching data', error);
+    }
 };
 
 export default fetchData;

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './SearchBar.css';
 import SearchIcon from '@mui/icons-material/Search';
 
@@ -24,9 +23,6 @@ export default function SearchBar({ onSubmit, text, setText }) {
 					</button>
 				</div>
 			</form>
-			<p>
-				Name: {text.name} | Values: {text.text} | Submitted values: 
-			</p>
 		</div>
 	);
 }

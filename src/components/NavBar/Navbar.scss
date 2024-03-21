@@ -12,10 +12,11 @@
 .title {
     cursor: pointer;
     font-weight: 500;
+    font-size: 22px;
 }
 
 .profileIcon {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
 }
