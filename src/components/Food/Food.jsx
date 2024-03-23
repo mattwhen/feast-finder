@@ -1,12 +1,12 @@
 import React from 'react';
 import './Food.scss';
-import Item from '../Item/Item';
+import ItemList from '../ItemList/ItemList';
 
-export default function Food() {
+export default function Food({ data, onClick }) {
   return (
     <div className='food'>
         <div className="foodContainer">
-        <Item />
+        <ItemList data={data} onClick={onClick} />
         </div>
     </div>
   );

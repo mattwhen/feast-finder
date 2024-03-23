@@ -1,0 +1,27 @@
+.searchbar {
+	position: relative;
+	max-width: 300px;
+
+	input {
+		width: 300px;
+		height: 30px;
+		padding: 0px 10px;
+		background-color: whitesmoke;
+		border: none;
+	}
+
+	.fieldContainer {
+		display: flex;
+		align-items: center;
+	}
+
+	.searchIcon {
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 0;
+		position: absolute;
+		top: 10%;
+		right: 5px;
+	}
+}

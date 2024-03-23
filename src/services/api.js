@@ -1,16 +1,29 @@
-const apiKey = process.env.API_KEY;
+const API_KEY = 'db797c14a8f74d1486063c3da2bc19ed';
 
-const fetchData = async (query) => {
+export const fetchData = async (query) => {
 	try {
 		const response = await fetch(
-			`https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=db797c14a8f74d1486063c3da2bc19ed`
+			`https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=${API_KEY}`
 		);
 		const data = await response.json();
-        console.log('api call', data.results);
 		return data.results;
 	} catch (error) {
-        console.error('Error fetching data', error);
-    }
+		console.error('Error fetching data', error);
+	}
 };
 
-export default fetchData;
+export const randomRecipe = async () => {
+	try {
+		const response = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=${API_KEY}`, {
+			'Content-type': 'application/json'
+		});
+		// Response: json() method
+		// the json() method returns a Promise which resolves with the result of parsing the body: ReadableStream text as json.
+		const data = await response.json();
+		return data.recipes;
+	} catch (error) {
+		console.error('Error fetching random recipes', error);
+	}
+}
+
+

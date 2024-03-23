@@ -5,6 +5,12 @@
 	.foodContainer {
 		width: 800px;
 		height: 800px;
+        display: flex;
+        justify-content: center;
 		border: solid 1px black;
+	}
+
+	.recipeRandom {
+		display: block;
 	}
 }
