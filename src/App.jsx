@@ -21,12 +21,6 @@ function App() {
 		console.log('On Submit: ' + allFood);
 	};
 
-	const fetchIngredients = async (e) => {
-		e.preventDefault();
-		const data = await getIngredients(ingredients);
-		console.log(data);
-	};
-
 	return (
 		<div className='App'>
 			<Navbar
@@ -36,7 +30,7 @@ function App() {
 				setRandomData={setRandomData}
 			/>
 			{/* Pass props for Ingredients to the Header component */}
-			<Header text={ingredients} setText={setIngredients} onSubmit={fetchIngredients}/>
+			<Header text={ingredients} setText={setIngredients} randomData={randomData} setRandomData={setRandomData} />
 			<div>
 				<Food data={randomData} onClick={getRandom} />
 			</div>
