@@ -1,0 +1,13 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	font-weight: 600;
+	margin: 30px 0px;
+
+	.headerTitle {
+		margin: 10px 0px;
+	}
+}
