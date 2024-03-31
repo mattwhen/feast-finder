@@ -3,8 +3,8 @@ import React from 'react';
 export default function Item({ data }) {
 	return (
 		<div className='itemContainer'>
-			{data !== null ? (
-				data.map((item) => <p key={item.id}>{item.title}</p>)
+			{data ? (
+				data.map((item) => <p key={item.id}>{item.title || item.name}</p>)
 			) : (
 				<p>No recipes at the moment.</p>
 			)}

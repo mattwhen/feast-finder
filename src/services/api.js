@@ -39,7 +39,7 @@ export const getIngredients = async (query) => {
 			}
 		);
 		const data = await response.json();
-		return data; 
+		return data.results; 
 		// Parse Response.body by using the .json() method, which then returns yet another Promise.
 
 		// Return the parsed data.
