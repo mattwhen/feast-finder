@@ -8,9 +8,11 @@ export default function ItemList({ data, onClick }) {
 			<div className='titleContainer'>
 				<h2>Feeling indecisive? </h2>
 				<h3>We got you.</h3>
-        <button className='recipeRandomBtn' onClick={onClick}>Random</button>
+				<button className='recipeRandomBtn' onClick={onClick}>
+					Random
+				</button>
 			</div>
-			<Item data={data}/>
+			<Item data={data} />
 		</div>
 	);
 }

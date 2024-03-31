@@ -1,9 +1,13 @@
 import './SearchBar.scss';
 import SearchIcon from '@mui/icons-material/Search';
+import LocalDiningIcon from '@mui/icons-material/LocalDining';
 
-export default function SearchBar({ onSubmit, text, setText }) {
-
-
+export default function SearchBar({
+	onSubmit,
+	text,
+	setText,
+	placeholder,
+}) {
 	return (
 		<div className='searchbar'>
 			<form onSubmit={onSubmit}>
@@ -13,9 +17,9 @@ export default function SearchBar({ onSubmit, text, setText }) {
 				so we copy the previous values by using the spread (...) operator. */}
 					<input
 						type='text'
-						placeholder='Enter keyword to search'
-						value={text.text}
-						onChange={(e) => setText({ ...text, text: e.target.value })}
+						placeholder={placeholder}
+						value={text}
+						onChange={(e) => setText(e.target.value)}
 					/>
 					<button className='searchIcon' onClick={onSubmit}>
 						<SearchIcon />
