@@ -1,12 +1,13 @@
 .food {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
+	height: 1000px;
 
 	.foodContainer {
 		width: 800px;
-		height: 800px;
-        display: flex;
-        justify-content: center;
+		height: 80%;
+		display: flex;
+		justify-content: center;
 		border: solid 1px black;
 	}
 

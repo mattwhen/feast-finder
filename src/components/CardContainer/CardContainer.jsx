@@ -1,8 +1,8 @@
 import React from 'react';
-import './ItemList.scss';
-import Item from '../Item/Item';
+import './CardContainer.scss';
+import Card from '../Card/Card';
 
-export default function ItemList({ data, onClick }) {
+export default function CardContainer({ data, onClick }) {
 	return (
 		<div className='itemList'>
 			<div className='titleContainer'>
@@ -12,7 +12,7 @@ export default function ItemList({ data, onClick }) {
 					Random
 				</button>
 			</div>
-			<Item data={data} />
+			{data ? <Card data={data} /> : null}
 		</div>
 	);
 }
