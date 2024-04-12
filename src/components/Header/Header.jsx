@@ -14,12 +14,7 @@ export default function Header({ text, setText, setRandomData }) {
 		<div className='header'>
 			<h3 className='headerTitle'>Yo, what to eat?</h3>
 			{/* Search Bar for INGREDIENTS... */}
-			<SearchBar
-				onSubmit={fetchIngredients}
-				text={text}
-				setText={setText}
-				placeholder={'Search ingredients'}
-			/>
+			
 		</div>
 	);
 }
