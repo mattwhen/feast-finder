@@ -12,11 +12,12 @@ export default function CardContainer({ data, onClick }) {
 					Random
 				</button>
 			</div>
-			{/* {data ? <Card data={data} /> : null} */}
+			<div className='cards'>
 			{data?.map(item => {
 				console.log(item);
 				return <Card data={item} />;
 			})}
+			</div>
 		</div>
 	);
 }

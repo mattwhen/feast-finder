@@ -1,14 +1,15 @@
 .food {
 	display: flex;
 	justify-content: center;
-	height: 1000px;
+	border: solid 2px black;
+	margin: 0px 10px;
+	min-height: 500px;
 
 	.foodContainer {
 		width: 800px;
 		height: 80%;
 		display: flex;
 		justify-content: center;
-		border: solid 1px black;
 	}
 
 	.recipeRandom {
