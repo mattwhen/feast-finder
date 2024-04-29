@@ -1,14 +1,18 @@
 .food {
 	display: flex;
 	justify-content: center;
-	height: 1000px;
+	margin: 0px 10px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+	font-style: normal;
 
 	.foodContainer {
 		width: 800px;
-		height: 80%;
+		min-height: 500px;
+		margin-bottom: 40px;
+		border: solid 2px black;
 		display: flex;
 		justify-content: center;
-		border: solid 1px black;
 	}
 
 	.recipeRandom {
